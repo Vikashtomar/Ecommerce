@@ -1,0 +1,33 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ #wrapper{
+
+    background-color: tan;
+    justify-content: center;
+    
+    
+}
+#products{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+  
+  }
+.products{
+
+    
+    border: 5px solid black;
+    width: 400px;
+    height: 25rem;
+    padding: 10px;
+    
+    
+}
+
+.products img{
+    width: 100%;
+    height: 70%;
+}
