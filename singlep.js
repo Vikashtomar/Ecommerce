@@ -14,7 +14,7 @@ else{
 
 async function see(id){
     const response = await fetch("https://dummyjson.com/products/"+id)
-    const result = response.json()
+    const result =  await response.json()
     console.log(result)
     show(result)
 }
@@ -24,7 +24,7 @@ function show(result){
     let div = document.createElement("div");
     div.classList.add("products");
     let img = document.createElement("img");
-    img.src = result.thumbnails;
+    img.src = result.thumbnail;
     let h3 = document.createElement("h3");
     let price = document.createElement("p");
     price.innerHTML = result.price

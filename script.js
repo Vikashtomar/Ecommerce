@@ -23,12 +23,13 @@ function show(data){
         let div= document.createElement("div");
         div.classList.add("products");
         let img = document.createElement("img");
-        let anchor = document.createElement("a");
-
-        anchor.href = "singleproducts?.html?id="+data[i].id;
-        
-        anchor.append(img)
         img.src = data[i].thumbnail;
+        let links = document.createElement("a");
+
+        links.href = "singleproducts.html?id="+data[i].id;
+        
+        
+        links.append(img)
         let h3 = document.createElement("h3");
 
         let title = document.createElement("title");
@@ -38,7 +39,7 @@ function show(data){
         let price = document.createElement("p");
         price.innerHTML = data[i].price;
 
-    div.append(anchor);
+    div.append(links);
     div.append(h3);
     div.append(title);
     div.append(description);
