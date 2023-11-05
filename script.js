@@ -1,7 +1,5 @@
 // URL   "https://dummyjson.com/products"
 
-
-
 function somesh(){
     fetch("https://dummyjson.com/products")
     .then((res)=>{ 
@@ -13,6 +11,7 @@ function somesh(){
         .then(result=>{
             show(result.products)
             console.log(result);
+            
         })
 }
 somesh()
